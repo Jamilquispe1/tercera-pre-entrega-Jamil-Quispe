@@ -1,0 +1,31 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+
+
+{% block titulo %}
+
+VISTA DE LOS ESTUDIANTES
+
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+Formulario para estudiantes
+
+<form action="" method="POST"> {% csrf_token %}
+
+    <table>
+
+        {{form2.as_table}}
+
+    </table>
+
+    <input type="submit" value="Confirmar">
+
+</form>
+
+{% endblock %}

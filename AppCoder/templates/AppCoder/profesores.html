@@ -1,0 +1,31 @@
+{% extends "AppCoder/padre.html" %}
+
+
+{% load static %}
+
+
+{% block titulo %}
+
+ENVASES GEMELOS
+
+
+{% endblock %}
+
+
+{% block descripcion %}
+
+Formulario para profesores
+
+<form action="" method="POST"> {% csrf_token %}
+
+    <table>
+
+        {{form3.as_table}}
+
+    </table>
+
+    <input type="submit" value="Confirmar">
+
+</form>
+
+{% endblock %}
